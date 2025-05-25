@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> <title>Héloïse's portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class = "logo">Héloïse</div>
+            <nav class="nav-menu">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#about">About</a>
+                <div class = "dropdown">
+                    <a href="index.html#projects" class="dropdown-toggle">Projects</a>
+                    <ul class="projects-submenu">
+                        <li><a href ="ocr.html"> OCR</a></li>
+                        <li><a href="video_game.html">Video game</a></li>
+                    </ul>
+                </div>
+                
+                <a href="index.html#books">Books</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+        <section class="project-carousel">
+                <h2>OCR Project</h2>
+                <p>This project focuses on Optical Character Recognition (OCR), combining image processing techniques and artificial intelligence implemented in C.
+                 The goal was to develop a system capable of analyzing images and extracting text with high accuracy. 
+                 We implemented algorithms to preprocess images (such as noise reduction, binarization, and segmentation) and trained a simple neural network to recognize characters. 
+                 The project was a great introduction to low-level AI programming and gave us valuable insights into how OCR systems work.</p>
+            </div>
+            <div class="carousel">
+                <figure>
+                    <img src="images/ocr/input.png" alt="OCR Input">
+                    <figcaption>Input image before processing.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/grayscale.png" alt="OCR grayscale image">
+                    <figcaption>First part of the preprocess : grayscale.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/contrast_improved.png" alt="OCR improvement of contrast">
+                    <figcaption>Second part of the preprocess : improvement of contrast and denoising.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/black_and_white.png" alt="OCR binarization of the input">
+                    <figcaption>Third part of the preprocess : image binarization.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/detection.png" alt="OCR detection">
+                    <figcaption>Last part of the preprocess: detection of grid and words letter by letter.(blue = grid, green = words list)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/letters.png" alt="OCR letters recognized by neural network">
+                    <figcaption>Recognized text output using neural network.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/solved.png" alt="OCR solved image">
+                    <figcaption>Result of the program.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/interface.png" alt="OCR interface">
+                    <figcaption>Graphic interface of the program.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ocr/options_menu.png" alt="OCR help page">
+                    <figcaption>Help page of the program.</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-arrow left">&#10094;</button>
+            <button class="carousel-arrow right">&#10095;</button>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by Héloïse</p>
+            <div class="socials">
+                <a href="https://github.com/Heloise3001" target="_blank">
+                  <img src="icons/github.svg" alt="GitHub" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/loloizeuh/" target="_blank">
+                  <img src="icons/instagram.svg" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+            <div class="footer-icons">
+                <img src="icons/heart.svg" alt="heart" class="heart-icon">
+                <img src="icons/star.svg" alt="star" class="star-icon">
+            </div>
+        </footer>
+        <script src="scripts/caroussel.js"></script>
+    </body>
+</html>

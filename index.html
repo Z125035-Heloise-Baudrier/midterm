@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> <title>Héloïse's portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class = "logo">Héloïse</div>
+            <nav class="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <div class = "dropdown">
+                    <a href="#projects" class="dropdown-toggle">Projects</a>
+                    <ul class="projects-submenu">
+                        <li><a href ="ocr.html"> OCR</a></li>
+                        <li><a href="video_game.html">Video game</a></li>
+                    </ul>
+                </div>
+                <a href="#books">Books</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+        <main>
+            <div class="hero" id="hero">
+                <div class = "hero-content" >
+                    <img src ="images/me.jpg" alt="Portrait of Héloïse, web developer">
+                    <div class="text">
+                        <cite>Code is not just instructions for a machine — it's a language we use to <span class="emphasis">shape reality</span> </cite>
+                        <a href="#projects" class="button">My work</a>
+                    </div>
+                </div>
+            </div>
+            <section class = "about" id="about">
+                <h2>About me : Skills and technologies</h2>
+                <div class="about-content">
+                    <div class = "about-text">
+                        <p>I’m Héloïse, a creative developer who loves crafting elegant and efficient 
+                            solutions through clean and powerful code. I focus on building scalable 
+                            experiences using modern programming languages and technologies.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skills-cards">
+                            <div class="card">
+                                <img src="icons/c.svg" alt="C icon">
+                                <p>C</p>
+                            </div>
+                            <div class="card">
+                                <img src="icons/c-sharp-c.svg" alt="C# icon">
+                                <p>C#</p>
+                            </div>
+                            <div class="card">
+                                <img src="icons/python.svg" alt="python icon">
+                                <p>Python</p>
+                            </div>
+                            <div class="card">
+                                <img src="icons/ocaml.svg" alt="ocaml icon">
+                                <p>Ocaml</p>
+                            </div>
+                            <div class="card">
+                                <img src="icons/html-5.svg" alt="HTML5 icon">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="card">
+                                <img src="icons/css-3.svg" alt="CSS icon">
+                                <p>CSS3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class ="projects" id="projects">
+                <div class="projects-section">
+                    <h2>✨ Explore my projects ✨</h2>
+                    <div class="project-buttons">
+                        <article class="project-link">
+                            <a href="ocr.html">
+                                <img src="icons/research.svg" alt="OCR icon">
+                                <p>🌸 OCR Project</p>
+                            </a>
+                        </article>
+                        <article class="project-link">
+                            <a href="video_game.html">
+                                <img src="images/video_game/logo_video_games.png" alt="Logo of my video game">
+                                <p>🎮 Video Game</p>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="books" id="books">
+                <h2>💖 My Top 5 Books 💖</h2>
+                <div id="book-bars" class="bars"></div>
+                <ul class="book-legend">
+                    <li><span class="legend-color dystopie"></span> Dystopia</li>
+                    <li><span class="legend-color horror"></span> Horror</li>
+                    <li><span class="legend-color thriller"></span> Thriller</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Made with ❤️ by Héloïse</p>
+            <div class="socials">
+                <a href="https://github.com/Heloise3001" target="_blank">
+                  <img src="icons/github.svg" alt="GitHub" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/loloizeuh/" target="_blank">
+                  <img src="icons/instagram.svg" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+            <div class="footer-icons">
+                <img src="icons/heart.svg" alt="heart" class="heart-icon">
+                <img src="icons/star.svg" alt="star" class="star-icon">
+            </div>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

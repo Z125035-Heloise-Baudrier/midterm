@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> <title>Héloïse's portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class = "logo">Héloïse</div>
+            <nav class="nav-menu">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#about">About</a>
+                <div class = "dropdown">
+                    <a href="index.html#projects" class="dropdown-toggle">Projects</a>
+                    <ul class="projects-submenu">
+                        <li><a href ="ocr.html"> OCR</a></li>
+                        <li><a href="video_game.html">Video game</a></li>
+                    </ul>
+                </div>
+                
+                <a href="index.html#books">Books</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+<section class="project-carousel">
+                <h2>Video Game Project</h2>
+                <p>This project centered around the development of a multiplayer video game featuring adaptive AI. 
+                Built from scratch in C#, the game was designed to support real-time interactions between players while incorporating intelligent non-player characters capable of reacting to player behavior.
+                 We implemented networking features for multiplayer support and developed a basic AI system. 
+                 The project offered valuable experience in both low-level network programming and AI design.</p>
+            </div>
+            <div class="carousel">
+                <figure>
+                    <img src="images/video_game/lobby.png" alt="Video game lobby">
+                    <figcaption>The lobby of our video game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/Niveau1Deathrun.png" alt="Video game mission 1">
+                    <figcaption>The first mission that leads to the mini-game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/begining_level1.png" alt="Video game beginning of level 1">
+                    <figcaption>The beginning of the first mini-game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/end_level1.png" alt="Video game end of the first mini-game">
+                    <figcaption>The end of the first mini-game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/level2.png" alt="Video game plan of the level 2 map">
+                    <figcaption>Plan of the first floor of the second mini-game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/cook_level2.png" alt="Video game AI">
+                    <figcaption>AI as a cook that can detect you.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/video_game/packaging.png" alt="Video game packaging">
+                    <figcaption>The packaging of our video game.</figcaption>
+                </figure>
+                
+            </div>
+            <button class="carousel-arrow left">&#10094;</button>
+            <button class="carousel-arrow right">&#10095;</button>
+        </section>
+        <footer>
+            <p>Made with ❤️ by Héloïse</p>
+            <div class="socials">
+                <a href="https://github.com/Heloise3001" target="_blank">
+                  <img src="icons/github.svg" alt="GitHub" width="24" height="24">
+                </a>
+                <a href="https://www.instagram.com/loloizeuh/" target="_blank">
+                  <img src="icons/instagram.svg" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+            <div class="footer-icons">
+                <img src="icons/heart.svg" alt="heart" class="heart-icon">
+                <img src="icons/star.svg" alt="star" class="star-icon">
+            </div>
+        </footer>
+        <script src="scripts/caroussel.js"></script>
+    </body>
+</html>
